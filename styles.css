@@ -1,0 +1,192 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background-color: aquamarine;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+.logo {
+    }
+
+.links {
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block1, .block2, .block3, .block4 {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+
+.block1 .left {
+    flex-direction: column;
+}
+
+.block1_button{
+    background-color: blue;
+    border-widht: 5px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Why is the content on the block1 left aligned left, and how do I align it all to the center? */
+
+.headline {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.img1 {
+    flex: 1 1 100%;
+}
+
+/* Why is the content block behaving weirdly? What do I want to happen?
+I think that I want the image to grow along with the text. But do I want the text to expand weridly like that anyway? Not sure. First, make the image grow along with it. Probably it`s stuck because I set a height to it, but maybe I can fix but only adding a grow element in its flex handle. */
+
+.block2 {
+    background-color: antiquewhite;
+    align-content: center;
+}
+
+.headline2 {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 32px;
+    display:flex;
+    justify-content: space-around;
+}
+
+/* Why can't I center this with align-center? How do I align this to the center? Maybe if I define this div as flex, and justify as space-around? It worked, but was that the best way to do this? I think so actually. */
+
+.testimonial-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+
+
+}
+
+/* How do I reduce the gap between those images? I wanted to make them fit into a little box that's centered. I thought of creating a % left and right margin for the testimonial carousel but that doesn't feel right. And doesn't look right too but I can't pinpoint why. */
+
+.testimonial-container {
+    width: 220px;
+}
+
+.text {
+
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.testimonial-img {
+    height: 200px; 
+    width: 200px;
+    border-radius: 5%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.block3 {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.bq_quote {
+    font-size: large;
+    font-style: italic;
+    flex: 1;
+    text-align: left;
+}
+
+.bq_author {
+    font-size: small;
+    font-weight: bold;
+    flex: 1;
+    text-align: right;
+}
+
+.block4 {
+    background-color: aliceblue;
+}
+
+.cta_box{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:25px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.cta_copy{
+    display: flex;
+    flex-direction: column;
+}
+
+.cta_headline{
+    font-weight: bold;
+}
+
+.cta_subheadline {
+    font-size: small;
+}
+.cta_button{
+    background-color: blue;
+    border-widht: 5px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:aliceblue;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: black;
+    font-size: smaller;
+    color: aliceblue;
+
+}
