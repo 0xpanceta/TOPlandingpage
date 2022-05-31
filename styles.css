@@ -1,8 +1,24 @@
-.header {
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100%;
+
+}
+
+.headerr {
     display: flex;
     justify-content: space-between;
     padding: 32px;
     background-color: aquamarine;
+}
+
+.headerlogo {
+    height: 32px;
 }
 
 .left, .right {
@@ -11,8 +27,10 @@
     gap:16px;
 }
 
+/*
 .logo {
     }
+*/
 
 .links {
     display: flex;
@@ -28,34 +46,33 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.block1, .block2, .block3, .block4 {
+.header, .testimonials, .citacao, .calltoaction {
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.block1 {
+.header {
     display: flex;
     justify-content: space-around;
     background-color: aquamarine;
+    align-items: center;
+    
 }
 
-.block1 .left {
+.header .left {
     flex-direction: column;
 }
 
-.block1_button{
+.header_button{
     background-color: blue;
     border-widht: 5px;
     border-radius: 5px;
     border-color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:aliceblue;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 24px;
 }
 
 /* Why is the content on the block1 left aligned left, and how do I align it all to the center? */
@@ -65,14 +82,18 @@ body {
     font-weight: bolder;
 }
 
+h1 {    font-size: 32px;
+}
+
 .img1 {
     flex: 1 1 100%;
+    height=128px;
 }
 
 /* Why is the content block behaving weirdly? What do I want to happen?
 I think that I want the image to grow along with the text. But do I want the text to expand weridly like that anyway? Not sure. First, make the image grow along with it. Probably it`s stuck because I set a height to it, but maybe I can fix but only adding a grow element in its flex handle. */
 
-.block2 {
+.testimonials {
     background-color: antiquewhite;
     align-content: center;
 }
@@ -102,10 +123,6 @@ I think that I want the image to grow along with the text. But do I want the tex
     width: 220px;
 }
 
-.text {
-
-}
-
 img {
     max-height: 100%;
     max-width: 100%;
@@ -120,7 +137,7 @@ img {
     border-color: blue;
 }
 
-.block3 {
+.citacao {
     display: flex;
     flex-direction: column;
     background-color: gray;
@@ -140,7 +157,7 @@ img {
     text-align: right;
 }
 
-.block4 {
+.calltoaction {
     background-color: aliceblue;
 }
 
@@ -170,13 +187,12 @@ img {
 }
 .cta_button{
     background-color: blue;
-    border-widht: 5px;
+    border-width: 1px;
     border-radius: 5px;
     border-color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:aliceblue;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 24px;
 }
 
 
@@ -190,3 +206,18 @@ img {
     color: aliceblue;
 
 }
+
+@media screen and (max-width: 720px) {
+    .img1 {display: none}
+    .header {
+        text-align: center;
+    }
+    .testimonial-carousel {
+        flex-direction: column;
+        align-items: center;    }
+    .calltoaction {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
